@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Web BackEnd</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Programación Web BackEnd</h1>
+    <form id="Form" class="buttons">
+        <button type="button" data-type="Lenguajes de programación y frameworks del lado del servidor">Tema 1: Lenguajes y frameworks</button>
+        <button type="button" data-type="Desarrollo de API">Tema 2: Api</button>
+        <button type="button" data-type="Manejo de bases de datos y ORM">Tema 3: Base de datos</button>
+        <button type="button" data-type="Pruebas de la aplicación">Tema 4: Pruebas</button>
+        <button type="button" data-type="Implementación de la aplicación">Tema 5: Implementacion</button>
+    </form>
+    <div id="Container"></div>
+    <script>
+        document.querySelectorAll("#Form button").forEach(button => {
+          button.addEventListener("click", async (event) => {
+            const type = event.target.getAttribute("data-type").toLowerCase();
+            var contadorPractica = 1
+          
+            const response = await fetch(`/tema/${type}`);
+            const tema = await response.json();
+    
+    
+            const contenedor = document.getElementById("Container"); 
+            if (tema.error) {
+              contenedor.innerHTML = "<h2>Tema no encontrada</h2>"; //si no se recupera el contenido HTML de un elemento.
+            } else {
+              contenedor.innerHTML = `
+                <div id="temaLista">                
+                <h2>${tema.nombre}</h2> 
+                <h3>Tema</h3>
+                  <div id="id">ID del tema: ${tema.id}</div>
+                  <div id="descripcion">Descripcion: ${tema.descripcion}</div>
+                  <div id="palabrasclave">palabras clave: ${tema.palabras_claves.join(", ")}</div>
+                  <div id="practicas"><h3>Practicas</h3>
+                  ${tema.practicas.map(practicas => `<li> 
+                    <h3 style = "margin-top: -8px; margin-bottom: -1px;">Practica ${contadorPractica++}</h3> 
+                    <h4>Titulo</h4>
+                    <div id="titulopractica">${practicas.titulo}</div>
+                    <h4>Descripcion</h4>
+                     <div id="descripcionpractica">${practicas.descripcion}</div>
+                      <h4>Objetivos</h4>
+                      <div id="objetivopractica">${practicas.objetivo}</div>
+                      </li>`).join("")}</ul> </div>`;
+                    
+                }
+          });
+        });
+      </script>
+      </body>
+</html>

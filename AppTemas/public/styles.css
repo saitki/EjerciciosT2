@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --background-color: #f9fafb;
+    --text-color: #333;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    line-height: 1.7;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+
+#Form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+#Form button {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#Form button:hover {
+    background-color: var(--background-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+#Container {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    padding: 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#Container h2 {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+#Container h3 {
+    color: var(--primary-color);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#descripcion, #palabrasclave, #id {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+#descripcion {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+#palabrasclave {
+    background-color: rgba(52, 152, 219, 0.03);
+    color: var(--text-muted);
+}
+
+#practicas {
+    margin-top: 25px;
+}
+
+#practicas li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+#practicas li:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+#titulopractica {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+#descripcionpractica, #objetivopractica {
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    #Form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Form button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #Container {
+        padding: 25px;
+    }
+}
+
+/* Clean Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}

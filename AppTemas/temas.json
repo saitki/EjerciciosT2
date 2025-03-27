@@ -1,0 +1,101 @@
+[{
+  "id": 1,
+  "nombre": "Lenguajes de programación y frameworks del lado del servidor",
+  "descripcion": "Introducción a los lenguajes y frameworks utilizados en el desarrollo del lado del servidor.",
+  "palabras_claves": [
+    "Lenguajes de programación",
+    "Frameworks",
+    "Variables",
+    "Tipos de datos",
+    "Estructuras de control",
+    "Funciones"
+  ],
+  "practicas": [
+    {
+      "titulo": "Comparación de lenguajes de programación del lado del servidor",
+      "descripcion": "Analizar los pros y contras de diferentes lenguajes utilizados en el desarrollo backend.",
+      "objetivo": "Entender las ventajas y desventajas de los lenguajes disponibles para la programación del lado del servidor."
+    },
+    {
+      "titulo": "Ejercicios de sintaxis y conceptos básicos",
+      "descripcion": "Practicar variables, tipos de datos, estructuras de control y funciones con ejercicios de código.",
+      "objetivo": "Fortalecer la base del desarrollo web mediante ejercicios prácticos."
+    }
+  ]
+},
+{
+  "id": 2,
+  "nombre": "Desarrollo de API",
+  "descripcion": "Creación de APIs RESTful para la comunicación entre el cliente y el servidor.",
+  "palabras_claves": [
+    "API REST",
+    "Endpoints",
+    "Métodos HTTP",
+    "Autenticación",
+    "Autorización"
+  ],
+  "practicas": [
+    {
+      "titulo": "Implementación de métodos HTTP",
+      "descripcion": "Desarrollar operaciones CRUD utilizando GET, POST, PUT y DELETE.",
+      "objetivo": "Aprender a manejar correctamente las solicitudes y respuestas de una API RESTful."
+    }
+  ]
+},
+{
+  "id": 3,
+  "nombre": "Manejo de bases de datos y ORM",
+  "descripcion": "Conexión e interacción con bases de datos relacionales y NoSQL.",
+  "palabras_claves": [
+    "Bases de datos",
+    "SQL",
+    "ORM",
+    "Consultas",
+    "Modelos de datos"
+  ],
+  "practicas": [
+    {
+      "titulo": "Diseño del modelo de datos",
+      "descripcion": "Crear un esquema de base de datos representando entidades y relaciones.",
+      "objetivo": "Definir estructuras de datos eficientes para una API web."
+    }
+  ]
+},
+{
+  "id": 4,
+  "nombre": "Pruebas de la aplicación",
+  "descripcion": "Validación y depuración de la aplicación web mediante pruebas unitarias e integración.",
+  "palabras_claves": [
+    "Pruebas unitarias",
+    "Integración",
+    "Depuración",
+    "Postman",
+    "Cypress"
+  ],
+  "practicas": [
+    {
+      "titulo": "Implementación de pruebas unitarias",
+      "descripcion": "Escribir pruebas unitarias para verificar el comportamiento de componentes individuales.",
+      "objetivo": "Garantizar la estabilidad y funcionamiento correcto del software."
+    }
+  ]
+},
+{
+  "id": 5,
+  "nombre": "Implementación de la aplicación",
+  "descripcion": "Despliegue y administración de la aplicación en servidores y entornos de producción.",
+  "palabras_claves": [
+    "Despliegue",
+    "CI/CD",
+    "Seguridad",
+    "SSL/TLS",
+    "Servidores"
+  ],
+  "practicas": [
+    {
+      "titulo": "Configuración de servidor y despliegue",
+      "descripcion": "Instalar y configurar un servidor para hospedar una aplicación web.",
+      "objetivo": "Aprender a implementar y administrar aplicaciones en producción."
+    }
+  ]
+}]
