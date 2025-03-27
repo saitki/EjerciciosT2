@@ -1,0 +1,110 @@
+[
+{
+    "id": "0001",
+    "tipo": "taco",
+    "nombre": "Taco lecho",
+    "precio": 20.00,
+    "ingredientes": {
+        "proteina": {
+            "nombre": "Puerco",
+            "preparacion": "Horneado"
+        },
+        "salsa": {
+            "nombre": "Tomate verde",
+            "picor": "medio"
+        },
+        "acompañamientos": [
+        {
+            "nombre": "Cebolla",
+            "cantidad": "1 cucharada",
+            "ingredientes": [ "Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+        }, {
+            "nombre": "Guacamole",
+            "cantidad": "2 cucharadas",
+            "ingredientes": [ "Aguacate", "Jugo de limon", "Sal",  "Cebolla", "Cilantro"]
+        }
+    ]
+    }
+},
+{
+    "id": "0001",
+    "tipo": "taco",
+    "nombre": "Taco de pollo",
+    "precio": 20.00,
+    "ingredientes": {
+        "proteina": {
+            "nombre": "Pollo",
+            "preparacion": "Horneado"
+        },
+        "salsa": {
+            "nombre": "Tomate verde",
+            "picor": "medio"
+        },
+        "acompañamientos": [
+        {
+            "nombre": "Cebolla",
+            "cantidad": "1 cucharada",
+            "ingredientes": [ "Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+        }, {
+            "nombre": "Guacamole",
+            "cantidad": "2 cucharadas",
+            "ingredientes": [ "Aguacate", "Jugo de limon", "Sal",  "Cebolla", "Cilantro"]
+        }
+    ]
+    }
+},
+{
+    "id": "0001",
+    "tipo": "taco",
+    "nombre": "Taco de Res",
+    "precio": 20.00,
+    "ingredientes": {
+        "proteina": {
+            "nombre": "Res",
+            "preparacion": "Horneado"
+        },
+        "salsa": {
+            "nombre": "Tomate verde",
+            "picor": "medio"
+        },
+        "acompañamientos": [
+        {
+            "nombre": "Cebolla",
+            "cantidad": "1 cucharada",
+            "ingredientes": [ "Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+        }, {
+            "nombre": "Guacamole",
+            "cantidad": "2 cucharadas",
+            "ingredientes": [ "Aguacate", "Jugo de limon", "Sal",  "Cebolla", "Cilantro"]
+        }
+    ]
+    }
+},
+{
+    "id": "0001",
+    "tipo": "taco",
+    "nombre": "Taco de Huevo",
+    "precio": 20.00,
+    "ingredientes": {
+        "proteina": {
+            "nombre": "Huevo",
+            "preparacion": "Horneado"
+        },
+        "salsa": {
+            "nombre": "Tomate verde",
+            "picor": "medio"
+        },
+        "acompañamientos": [
+        {
+            "nombre": "Cebolla",
+            "cantidad": "1 cucharada",
+            "ingredientes": [ "Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+        }, {
+            "nombre": "Guacamole",
+            "cantidad": "2 cucharadas",
+            "ingredientes": [ "Aguacate", "Jugo de limon", "Sal",  "Cebolla", "Cilantro"]
+        }
+    ]
+    }
+}
+]
